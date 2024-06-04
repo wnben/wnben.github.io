@@ -13,7 +13,6 @@
     background-image: url('/public/HomeSectionA.JPG'); /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,10 +20,14 @@
 }
 
 .text-content {
+    position: absolute; /* Set position to absolute */
+    top: 75%; /* Move the text to three-fourths of the image height */
+    left: 50%; /* Center the text horizontally */
+    transform: translate(-50%, -50%); /* Center the text vertically */
     color: #fff;
     text-align: center;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 5rem 2rem;
+    background-color: rgba(0, 0, 0, 0);
     border-radius: 10px;
 }
 
