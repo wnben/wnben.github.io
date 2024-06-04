@@ -17,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px; /* Add rounded corners */
 }
 
 .text-content {
@@ -48,13 +49,13 @@
 }
 
 .buttons button:first-child {
-    background-color: #007bff;
+    background-color: #EA2F86;
     color: white;
 }
 
 .buttons button:last-child {
-    background-color: #28a745;
-    color: white;
+    background-color: #fff;
+    color: black;
 }
 
 .buttons button:hover {
