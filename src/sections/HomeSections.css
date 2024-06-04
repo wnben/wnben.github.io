@@ -1,0 +1,62 @@
+/* src/sections/HomeSection.css */
+.home-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Fallback background color */
+}
+
+.background-image {
+    width: 80%;
+    height: 80%;
+    background-image: url('/build/HomeSectionA.JPG'); /* Replace with the path to your image */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-content {
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+}
+
+.text-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.text-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.buttons button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.buttons button:last-child {
+    background-color: #28a745;
+    color: white;
+}
+
+.buttons button:hover {
+    opacity: 0.9;
+}
