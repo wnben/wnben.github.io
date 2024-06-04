@@ -1,0 +1,102 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    border-bottom: 1px solid #ddd;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+}
+
+.nav-logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.heart-icon {
+    width: 1rem; /* Adjust the width as needed */
+    height: 1rem; /* Adjust the height as needed */
+    margin-right: 0.25rem; /* Adjust the margin as needed */
+}
+
+.nav-logo {
+    font-size: 1.00rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+}
+
+.nav-search img {
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+.search-box {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    flex-grow: 1;
+    margin-right: 0.5rem;
+}
+
+.search-box button {
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+}
