@@ -1,5 +1,6 @@
 // src/components/Navbar.js
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -21,10 +22,10 @@ const Navbar = () => {
                 <div className="nav-logo">We are wedding!</div>
             </div>
             <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-                <a href="#home">Home</a>
-                <a href="#our-story">Our story</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#the-wedding">The wedding</a>
+                <Link to="/">Home</Link>
+                <Link to="/our-story">Our Story</Link>
+                <Link to="/gallery">Gallery</Link>
+                <Link to="/the-wedding">The Wedding</Link>
             </div>
             <div className="nav-search" onClick={toggleSearch}>
                 <img src="search-icon.png" alt="Search" />

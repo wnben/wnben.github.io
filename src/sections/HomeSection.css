@@ -10,7 +10,7 @@
 .background-image {
     width: 80%;
     height: 80%;
-    background-image: url('/public/HomeSectionA.JPG'); /* Replace with the path to your image */
+    background-image: url('/src/assets/homepage-images/HomeSectionA.JPG'); /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
     display: flex;
