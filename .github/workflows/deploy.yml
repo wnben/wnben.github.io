@@ -24,13 +24,21 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Debug git directory
+      - name: Debug build directory
         run: |
           echo "Current directory: $(pwd)"
-          echo "Directory listing:"
+          echo "Contents of the current directory:"
           ls -la
-          echo "Git status:"
-          git status
+          echo "Contents of the build directory:"
+          ls -la build
+
+      - name: Set up Git configuration
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Verify Git status
+        run: git status
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
