@@ -18,8 +18,8 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="nav-logo-container">
-                <img src="heart-icon.png" alt="Heart Icon" className="heart-icon" />
-                <div className="nav-logo">We are wedding!</div>
+                <img src="wedding-icon.png" alt="Wedding icon" className="wedding-icon" />
+                <div className="nav-logo">Cheers to us!</div>
             </div>
             <div className={`nav-links ${isOpen ? 'open' : ''}`}>
                 <Link to="/">Home</Link>
