@@ -6,17 +6,39 @@ on:
       - main
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Set up Node.js 20.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
       - name: Build project
+        run: npm run build
+
+      - name: Debug build directory
         run: |
-          # Add your build steps here
-          echo "Building the project..."
+          echo "Current directory: $(pwd)"
+          echo "Contents of the current directory:"
+          ls -la
+          echo "Contents of the build directory:"
+          ls -la build
+
+      - name: Set up Git configuration
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Verify Git status
+        run: git status
 
       - name: Deploy to GitHub Pages
         run: |
