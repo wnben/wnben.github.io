@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import OurStory from './pages/OurStory';
+import Gallery from './pages/Gallery';
+import WeddingDetails from './pages/WeddingDetails';
+import GuestVerification from './components/GuestVerification';
 
-function App() {
+const App = () => {
+  const [isVerified, setIsVerified] = useState(false);
+
+  if (!isVerified) {
+    return <GuestVerification onVerified={setIsVerified} />;
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/our-story" element={<OurStory />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/wedding-details" element={<WeddingDetails />} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
