@@ -20,10 +20,12 @@ const GuestVerification = ({ onVerified }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     const trimmedName = name.trim();
+
     if (trimmedName === '') {
       setError('Please enter your name.');
       return;
     }
+
     if (!guestList.includes(trimmedName)) {
       setError('Sorry, your name is not on the guest list.');
     } else {

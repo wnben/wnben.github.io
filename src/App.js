@@ -10,12 +10,13 @@ import GuestVerification from './components/GuestVerification';
 const App = () => {
   const [isVerified, setIsVerified] = useState(false);
 
+
   if (!isVerified) {
     return <GuestVerification onVerified={setIsVerified} />;
   }
 
   return (
-    <Router basename="/wnben.github.io">
+    <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
