@@ -2,13 +2,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     background-color: #f5f5f5; /* Optional: Background color outside the image frame */
 }
 
 .home-section-1-frame {
     width: 80%; /* Adjust the width of the frame */
-    max-width: 800px; /* Set a maximum width for the frame */
+    max-width: 1000px; /* Set a maximum width for the frame */
     height: 60vh; /* Adjust the height of the frame */
     max-height: 500px; /* Set a maximum height for the frame */
     background-image: url('../assets/HomeSection_1.JPG');
@@ -26,9 +26,11 @@
 
 .home-section-1-content {
     background-color: rgba(0, 0, 0, 0.5); /* To make the text stand out */
+    width: 80%;
+    max-width: 700px;
     padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px; /* Added margin to move the content down */
+    margin-bottom: 10px; /* Added margin to move the content down */
 }
 
 .home-section-1 h1 {
@@ -36,9 +38,24 @@
     margin-bottom: 15px; /* Adjusted margin */
 }
 
-.home-section-1 p {
-    font-size: 1.25rem; /* Adjusted font size */
-    margin-bottom: 20px; /* Adjusted margin */
+.home-section-1-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the date and location */
+    margin-bottom: 20px; /* Margin below the details */
+}
+
+.home-section-1-detail {
+    display: flex;
+    align-items: center;
+}
+
+.home-section-1-icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    filter: invert(49%) sepia(83%) saturate(347%) hue-rotate(300deg) brightness(95%) contrast(95%);
 }
 
 .rsvp-button {

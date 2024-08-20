@@ -1,4 +1,6 @@
 import React from 'react';
+import CalendarIcon from '../assets/calendar-icon.svg';
+import LocationIcon from '../assets/location-icon.svg';
 import './HomeSection1.css';
 
 const HomeSection1 = () => {
@@ -7,7 +9,16 @@ const HomeSection1 = () => {
             <div className="home-section-1-frame">
                 <div className="home-section-1-content">
                     <h1>Join us for the wedding</h1>
-                    <p>Saturday, June 26, 2023, at 4:00 PM</p>
+                    <div className="home-section-1-details-container">
+                        <div className="home-section-1-detail">
+                            <img src={CalendarIcon} alt="Calendar Icon" className="home-section-1-icon" />
+                            <p>Saturday, June 26, 2023, at 4:00 PM</p>
+                        </div>
+                        <div className="home-section-1-detail">
+                            <img src={LocationIcon} alt="Location Icon" className="home-section-1-icon" />
+                            <p>Central Park, New York, NY</p>
+                        </div>
+                    </div>
                     <button className="rsvp-button">RSVP</button>
                 </div>
             </div>
