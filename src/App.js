@@ -15,7 +15,7 @@ const App = () => {
   }
 
   return (
-    <Router>
+    <Router basename="/wnben.github.io">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
