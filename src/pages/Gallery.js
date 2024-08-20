@@ -1,12 +1,31 @@
 import React from 'react';
+import { importAll } from '../utils/imageLoader'; // Import the utility function
+import './Gallery.css';
+
+// Dynamically import all images from the subfolders
+const outsideImages = importAll(require.context('../assets/gallery/FB_outside', false, /\.(jpg|jpeg|png)$/));
+const passageImages = importAll(require.context('../assets/gallery/FB_passage', false, /\.(jpg|jpeg|png)$/));
+const stairwayImages = importAll(require.context('../assets/gallery/FB_stairway', false, /\.(jpg|jpeg|png)$/));
+
+const images = [
+    ...outsideImages.map((src, index) => ({ src, alt: `outside ${index + 1}` })),
+    ...passageImages.map((src, index) => ({ src, alt: `passage ${index + 1}` })),
+    ...stairwayImages.map((src, index) => ({ src, alt: `stairway ${index + 1}` }))
+];
 
 const Gallery = () => {
-  return (
-    <div>
-      <h1>Gallery</h1>
-      <p>Our cherished moments captured in photos...</p>
-    </div>
-  );
+    return (
+        <div className="gallery">
+            <h2>Photo Gallery</h2>
+            <div className="gallery-grid">
+                {images.map((image, index) => (
+                    <div className="gallery-item" key={index}>
+                        <img src={image.src} alt={image.alt} className="gallery-image" />
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
 };
 
 export default Gallery;
