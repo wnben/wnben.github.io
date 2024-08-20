@@ -1,15 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5b9307b.css",
-    "main.js": "/static/js/main.17bd01a9.js",
+    "main.css": "/static/css/main.ecf1b764.css",
+    "main.js": "/static/js/main.a52af04b.js",
+    "static/media/HomeSection_1.JPG": "/static/media/HomeSection_1.2b7f0e71147f876ac2a6.JPG",
     "static/media/wedding-logo.png": "/static/media/wedding-logo.7ef11ea5fc16bbb47364.png",
     "static/media/search-icon.svg": "/static/media/search-icon.84f1a884ff2f40eda356fc76e4521df5.svg",
+    "static/media/calendar-icon.svg": "/static/media/calendar-icon.75159bfee7829f637567b1923c354544.svg",
+    "static/media/location-icon.svg": "/static/media/location-icon.a6680187b796ef4e87ca8e024ed37eb3.svg",
     "index.html": "/index.html",
-    "main.c5b9307b.css.map": "/static/css/main.c5b9307b.css.map",
-    "main.17bd01a9.js.map": "/static/js/main.17bd01a9.js.map"
+    "main.ecf1b764.css.map": "/static/css/main.ecf1b764.css.map",
+    "main.a52af04b.js.map": "/static/js/main.a52af04b.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5b9307b.css",
-    "static/js/main.17bd01a9.js"
+    "static/css/main.ecf1b764.css",
+    "static/js/main.a52af04b.js"
   ]
 }
