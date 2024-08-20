@@ -1,0 +1,83 @@
+.home-section-2 {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.home-section-2 h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.itinerary-table {
+    display: table;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.itinerary-row {
+    display: table-row;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.itinerary-header {
+    background-color: #ff4081;
+    color: white;
+}
+
+.itinerary-cell {
+    display: table-cell;
+    padding: 15px 10px;
+    text-align: left;
+    font-size: 1rem;
+    color: #555;
+}
+
+.itinerary-header .itinerary-cell {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.itinerary-row:last-child {
+    border-bottom: none;
+}
+
+.itinerary-cell:nth-child(1),
+.itinerary-cell:nth-child(2) {
+    width: 25%; /* Theme and Time */
+}
+
+.itinerary-cell:nth-child(3) {
+    width: 30%; /* Location */
+}
+
+.itinerary-cell:nth-child(4) {
+    width: 20%; /* Precautions */
+}
+
+@media (max-width: 768px) {
+    .itinerary-table {
+        display: block;
+    }
+
+    .itinerary-row {
+        display: block;
+    }
+
+    .itinerary-cell {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .itinerary-header {
+        display: none;
+    }
+}

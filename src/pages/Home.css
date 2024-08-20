@@ -1,0 +1,10 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Ensures sections stack without compression */
+    width: 100%;
+}
+
+.home-page > * {
+    flex-shrink: 0; /* Prevent sections from shrinking */
+}

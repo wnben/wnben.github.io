@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 70vh; /* Ensures this section takes up 70% of the viewport height */
     background-color: #f5f5f5; /* Optional: Background color outside the image frame */
 }
 
