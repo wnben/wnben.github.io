@@ -1,9 +1,12 @@
+// src/pages/Home.js
 import React from 'react';
+import HomeSection1 from './HomeSection1';
 
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to Our Wedding Website</h1>
+      <HomeSection1 />
+      {/* Other sections can be added here */}
     </div>
   );
 };
