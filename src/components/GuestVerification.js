@@ -1,32 +1,52 @@
-import React, { useState } from 'react';
-import guestList from '../guestList.json';
+import React, { useState, useEffect } from 'react';
+import './GuestVerification.css';
+import guestListData from '../data/guestlist.json';
 
 const GuestVerification = ({ onVerified }) => {
   const [name, setName] = useState('');
   const [error, setError] = useState('');
+  const [guestList, setGuestList] = useState([]);
 
-  const handleVerification = () => {
-    const guestExists = guestList.some(guest => guest.name.toLowerCase() === name.toLowerCase());
+  useEffect(() => {
+    // Load guest list from the imported JSON data
+    setGuestList(guestListData.map(guest => guest.name));
+  }, []);
 
-    if (guestExists) {
-      onVerified(true);
+  const handleInputChange = (event) => {
+    setName(event.target.value);
+    setError('');
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const trimmedName = name.trim();
+    if (trimmedName === '') {
+      setError('Please enter your name.');
+      return;
+    }
+    if (!guestList.includes(trimmedName)) {
+      setError('Sorry, your name is not on the guest list.');
     } else {
-      setError('Name not found in guest list. Please try again.');
+      setError('');
+      onVerified(true); // Notify the parent component that verification is successful
     }
   };
 
   return (
-    <div>
-      <h1>Welcome to Our Wedding Website</h1>
-      <p>Please enter your name to continue:</p>
-      <input
-        type="text"
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        placeholder="Enter your name"
-      />
-      <button onClick={handleVerification}>Submit</button>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+    <div className="verification-container">
+      <h2 className="verification-header">Welcome to Our Wedding</h2>
+      <p className="verification-subtext">Please verify your name to continue:</p>
+      <form onSubmit={handleSubmit} className="verification-form">
+        <input
+          type="text"
+          placeholder="Enter your name"
+          value={name}
+          onChange={handleInputChange}
+          className={`verification-input ${error ? 'input-error' : ''}`}
+        />
+        {error && <p className="error-message">{error}</p>}
+        <button type="submit" className="verification-button">Verify</button>
+      </form>
     </div>
   );
 };
