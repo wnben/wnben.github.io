@@ -8,7 +8,7 @@ const HomeSection1 = () => {
         <div className="home-section-1">
             <div className="home-section-1-frame">
                 <div className="home-section-1-content">
-                    <h1>Join us for the wedding</h1>
+                    <h1>Weining & Yuting are getting married</h1>
                     <div className="home-section-1-details-container">
                         <div className="home-section-1-detail">
                             <img src={CalendarIcon} alt="Calendar Icon" className="home-section-1-icon" />

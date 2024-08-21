@@ -7,7 +7,8 @@ const Home = () => {
     return (
         <div className="home-page">
             <HomeSection1 />
-            <HomeSection2 /> {/* Adding HomeSection2 */}
+            <HomeSection2 />
+            
             {/* You can add more sections here */}
         </div>
     );

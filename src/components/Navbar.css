@@ -1,54 +1,39 @@
-.navbar {
+/* Import font */
+@font-face {
+  font-family: 'Chesalova';
+  src: url('../assets/fonts/ChesalovaRegular-PV75m.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar-vertical {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: relative; /* Position relative to enable centering of links */
+  flex-direction: column;
+  padding: 10px;
+  font-family: 'Chesalova', 'Georgia', serif;
+  font-size: 18px;
 }
 
-.navbar-left {
-  display: flex;
-  align-items: center;
-}
-
-.navbar-logo {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.navbar-brand {
-  font-size: 24px;
-  font-weight: bold;
-  color: #000;
-}
 
 .navbar-links {
-  display: flex;
-  list-style-type: none;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar-item {
-  margin: 0 15px;
+  margin-bottom: 50px;
 }
 
 .navbar-item a {
+  color: black;
   text-decoration: none;
-  color: #000;
 }
 
-.navbar-right {
-  display: flex;
-  align-items: center;
-  margin-left: auto; /* Ensures the navbar-right stays on the right side */
-}
-
-.navbar-search-icon {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
+.navbar-item a:hover {
+  text-decoration: underline;
 }
