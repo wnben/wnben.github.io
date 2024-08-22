@@ -1,18 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.ecf1b764.css",
-    "main.js": "/static/js/main.a52af04b.js",
+    "main.css": "/static/css/main.62476d8a.css",
+    "main.js": "/static/js/main.23d2b822.js",
+    "static/media/Home1.JPG": "/static/media/Home1.f22db803252eabb34bdf.JPG",
+    "static/media/Home2.JPG": "/static/media/Home2.3ed29070c1c9cae0a789.JPG",
+    "static/media/stairway2.JPG": "/static/media/stairway2.9a989be4991f1bd2b24e.JPG",
+    "static/media/outside1.JPG": "/static/media/outside1.f15ba556ad5b9e7f8a5a.JPG",
+    "static/media/stairway1.JPG": "/static/media/stairway1.5cea4d053897ab68f3ea.JPG",
     "static/media/HomeSection_1.JPG": "/static/media/HomeSection_1.2b7f0e71147f876ac2a6.JPG",
+    "static/media/stairway3.JPG": "/static/media/stairway3.3d7e0b36e31cb5129569.JPG",
+    "static/media/passage1.JPG": "/static/media/passage1.ddf161025b7b11e78f81.JPG",
+    "static/media/outside2.JPG": "/static/media/outside2.9de9f5e6ef1e01afc0de.JPG",
+    "static/media/Home3.JPG": "/static/media/Home3.f7c88237d1db4e1a4a16.JPG",
+    "static/media/Aller_Std_Rg.ttf": "/static/media/Aller_Std_Rg.009705f132c9defd0e83.ttf",
+    "static/media/envelope.png": "/static/media/envelope.74c20a5a60947c1314b9.png",
     "static/media/wedding-logo.png": "/static/media/wedding-logo.7ef11ea5fc16bbb47364.png",
-    "static/media/search-icon.svg": "/static/media/search-icon.84f1a884ff2f40eda356fc76e4521df5.svg",
+    "static/media/ChesalovaRegular-PV75m.ttf": "/static/media/ChesalovaRegular-PV75m.c7f19c2b17f95be81c33.ttf",
     "static/media/calendar-icon.svg": "/static/media/calendar-icon.75159bfee7829f637567b1923c354544.svg",
     "static/media/location-icon.svg": "/static/media/location-icon.a6680187b796ef4e87ca8e024ed37eb3.svg",
     "index.html": "/index.html",
-    "main.ecf1b764.css.map": "/static/css/main.ecf1b764.css.map",
-    "main.a52af04b.js.map": "/static/js/main.a52af04b.js.map"
+    "main.62476d8a.css.map": "/static/css/main.62476d8a.css.map",
+    "main.23d2b822.js.map": "/static/js/main.23d2b822.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecf1b764.css",
-    "static/js/main.a52af04b.js"
+    "static/css/main.62476d8a.css",
+    "static/js/main.23d2b822.js"
   ]
 }
