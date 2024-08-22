@@ -35,20 +35,22 @@ const GuestVerification = ({ onVerified }) => {
   };
 
   return (
-    <div className="verification-container">
-      <h2 className="verification-header">Welcome to Our Wedding</h2>
-      <p className="verification-subtext">Please verify your name to continue:</p>
-      <form onSubmit={handleSubmit} className="verification-form">
-        <input
-          type="text"
-          placeholder="Enter your name"
-          value={name}
-          onChange={handleInputChange}
-          className={`verification-input ${error ? 'input-error' : ''}`}
-        />
-        {error && <p className="error-message">{error}</p>}
-        <button type="submit" className="verification-button">Verify</button>
-      </form>
+    <div className="verification-background">
+      <div className="verification-container">
+        <h2 className="verification-header">Welcome to Our Wedding</h2>
+        <p className="verification-subtext">Please enter your name to open the invitation:</p>
+        <form onSubmit={handleSubmit} className="verification-form">
+          <input
+            type="text"
+            placeholder="Enter your name"
+            value={name}
+            onChange={handleInputChange}
+            className={`verification-input ${error ? 'input-error' : ''}`}
+          />
+          {error && <p className="error-message">{error}</p>}
+          <button type="submit" className="verification-button">Verify</button>
+        </form>
+      </div>
     </div>
   );
 };

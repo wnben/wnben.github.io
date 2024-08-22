@@ -1,29 +1,21 @@
 import React from 'react';
-import CalendarIcon from '../assets/calendar-icon.svg';
-import LocationIcon from '../assets/location-icon.svg';
 import './HomeSection1.css';
+import homeImage from '../assets/Home1.JPG';
 
 const HomeSection1 = () => {
     return (
-        <div className="home-section-1">
-            <div className="home-section-1-frame">
-                <div className="home-section-1-content">
-                    <h1>Weining & Yuting are getting married</h1>
-                    <div className="home-section-1-details-container">
-                        <div className="home-section-1-detail">
-                            <img src={CalendarIcon} alt="Calendar Icon" className="home-section-1-icon" />
-                            <p>Saturday, June 26, 2023, at 4:00 PM</p>
-                        </div>
-                        <div className="home-section-1-detail">
-                            <img src={LocationIcon} alt="Location Icon" className="home-section-1-icon" />
-                            <p>Central Park, New York, NY</p>
-                        </div>
-                    </div>
-                    <button className="rsvp-button">RSVP</button>
-                </div>
+        <div className="home-section1">
+            <h1>Weining ♥ Yuting</h1>
+            <div className="image-container">
+                <img 
+                    src={homeImage} 
+                    alt="Couple sitting on a rooftop" 
+                    className="couple-image"
+                />
             </div>
+            <p>- Save the date, we're gettin' hitched -</p>
         </div>
     );
-};
+}
 
 export default HomeSection1;

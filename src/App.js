@@ -6,6 +6,7 @@ import OurStory from './pages/OurStory';
 import Gallery from './pages/Gallery';
 import WeddingDetails from './pages/WeddingDetails';
 import GuestVerification from './components/GuestVerification';
+import Footer from './components/Footer';
 
 const App = () => {
   const [isVerified, setIsVerified] = useState(false);
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/wedding-details" element={<WeddingDetails />} />
       </Routes>
+      <Footer />
     </Router>
   );
 };

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as SearchIcon } from '../assets/search-icon.svg';
 import WeddingLogo from '../assets/wedding-logo.png';
 import SearchComponent from './SearchComponent';
 import './Navbar.css';

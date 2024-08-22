@@ -1,15 +1,21 @@
 import React from 'react';
-import HomeSection1 from './HomeSection1'; // Assuming you have this section
-import HomeSection2 from './HomeSection2'; // Importing HomeSection2
-import './Home.css'; // Assuming you have some global styles for Home
+import HomeSection11 from './HomeSection11';
+
+import HomeSection1 from './HomeSection1';
+import HomeSection2 from './HomeSection2';
+import HomeSection3 from './HomeSection3';
+import HomeSection4 from './HomeSection4';
+import './Home.css';
 
 const Home = () => {
     return (
         <div className="home-page">
-            <HomeSection1 />
-            <HomeSection2 />
-            
-            {/* You can add more sections here */}
+            <div className="home-sections-row">
+                <HomeSection1 />
+                <HomeSection2 />
+            </div>
+            <HomeSection3 />
+            <HomeSection4 />
         </div>
     );
 };

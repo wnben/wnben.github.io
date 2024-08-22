@@ -1,10 +1,11 @@
-.home-page {
+.home-sections-row {
     display: flex;
-    flex-direction: column;
-    align-items: stretch; /* Ensures sections stack without compression */
+    justify-content: space-between;
     width: 100%;
 }
 
-.home-page > * {
-    flex-shrink: 0; /* Prevent sections from shrinking */
+.home-sections-row > * {
+    flex: 1;
+    margin: 0 0px; /* Optional: add some space between sections */
+    box-sizing: border-box; /* Ensure padding/margin don't affect width */
 }

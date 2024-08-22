@@ -1,62 +1,48 @@
-.home-section-2 {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
+/* Import font */
+@font-face {
+    font-family: 'aller';
+    src: url('../assets/fonts/Aller_Std_Rg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.home-section {
+    background-color: #A52A2A;
+    color: white;
+    padding: 50px 20px;
     text-align: center;
+    font-family: 'Arial', sans-serif;
 }
 
-.home-section-2 h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.events-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px; /* Space between each event card */
-}
-
-.event-card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 100%;
-    max-width: 700px;
-    text-align: left;
-    position: relative;
-}
-
-.event-theme {
-    font-size: 1.5rem;
-    color: #ff4081;
+.home-section__date {
+    font-family: 'aller', 'Georgia', serif;
+    font-size: 38px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
-.event-time, .event-location, .event-precautions {
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 8px;
+.home-section__location {
+    font-size: 2rem; /* This is 32px, similar to the h1 size in Section1 */
+    margin-bottom: 20px;
 }
 
-.event-card::before {
-    content: '';
-    position: absolute;
-    left: -20px;
-    top: 10px;
-    width: 6px;
-    height: 80%;
-    background-color: #ff4081;
-    border-radius: 10px;
+.home-section__image-container {
+    width: 100%;
+    max-width: 600px; /* Consistent max-width */
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto; /* Center horizontally */
+    display: flex;
+    justify-content: space-between; /* Aligns content to the left and right */
 }
 
-@media (max-width: 768px) {
-    .event-card {
-        width: 90%;
-    }
+.home-section__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
 
-    .event-card::before {
-        left: -10px;
-    }
+.home-section__details {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
