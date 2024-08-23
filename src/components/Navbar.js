@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import WeddingLogo from '../assets/wedding-logo.png';
-import SearchComponent from './SearchComponent';
+// import WeddingLogo from '../assets/wedding-logo.png';
+// import SearchComponent from './SearchComponent';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
           <Link to="/gallery">Gallery</Link>
         </li>
         <li className="navbar-item">
-          <Link to="/rsvp">RSVP</Link>
+          <Link to="/RSVPPage">RSVP</Link>
         </li>
       </ul>
     </nav>
