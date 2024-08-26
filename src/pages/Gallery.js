@@ -31,26 +31,28 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery-container">
-      <div className="album-selector">
-        {Object.keys(albums).map((album) => (
-          <button
-            key={album}
-            className={`album-button ${selectedAlbum === album ? 'active' : ''}`}
-            onClick={() => handleAlbumChange(album)}
-          >
-            {album.charAt(0).toUpperCase() + album.slice(1)}
-          </button>
-        ))}
-      </div>
-      <div className="carousel">
-        <button className="nav-button prev" onClick={handlePrev}>‹</button>
-        <img
-          src={albums[selectedAlbum][currentIndex].src}
-          alt={albums[selectedAlbum][currentIndex].alt}
-          className="carousel-image"
-        />
-        <button className="nav-button next" onClick={handleNext}>›</button>
+    <div className="content-container">
+      <div className="gallery-container">
+        <div className="album-selector">
+          {Object.keys(albums).map((album) => (
+            <button
+              key={album}
+              className={`album-button ${selectedAlbum === album ? 'active' : ''}`}
+              onClick={() => handleAlbumChange(album)}
+            >
+              {album.charAt(0).toUpperCase() + album.slice(1)}
+            </button>
+          ))}
+        </div>
+        <div className="carousel">
+          <button className="nav-button prev" onClick={handlePrev}>‹</button>
+          <img
+            src={albums[selectedAlbum][currentIndex].src}
+            alt={albums[selectedAlbum][currentIndex].alt}
+            className="carousel-image"
+          />
+          <button className="nav-button next" onClick={handleNext}>›</button>
+        </div>
       </div>
     </div>
   );

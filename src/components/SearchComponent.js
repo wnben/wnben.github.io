@@ -19,21 +19,23 @@ const SearchComponent = ({ data }) => {
   };
 
   return (
-    <div>
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={handleSearch}
-        placeholder="Search..."
-        className="search-input"
-      />
-      {searchResults.length > 0 && (
-        <ul className="search-results">
-          {searchResults.map((result, index) => (
-            <li key={index} className="result-item">{result}</li>
-          ))}
-        </ul>
-      )}
+    <div className="content-container">
+      <div>
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={handleSearch}
+          placeholder="Search..."
+          className="search-input"
+        />
+        {searchResults.length > 0 && (
+          <ul className="search-results">
+            {searchResults.map((result, index) => (
+              <li key={index} className="result-item">{result}</li>
+            ))}
+          </ul>
+        )}
+      </div>
     </div>
   );
 };

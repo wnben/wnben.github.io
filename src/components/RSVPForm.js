@@ -16,6 +16,7 @@ const RSVPForm = () => {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
+                    'Accept': 'application/json'
                 },
                 body: JSON.stringify({
                     firstName,
@@ -24,10 +25,12 @@ const RSVPForm = () => {
                     comment,
                 }),
             });
+            
             if (response.ok) {
                 navigate('/submit-success');
             } else {
-                throw new Error('Submit failed');
+                const errorData = await response.json();
+                throw new Error(errorData.message || 'Submission failed');
             }
         } catch (error) {
             console.error('Error:', error);

@@ -9,6 +9,7 @@ import RSVPPage from './pages/RSVPPage';
 import SubmitSuccess from './components/SubmitSuccess'; // Import the new component
 import GuestVerification from './components/GuestVerification';
 import Footer from './components/Footer';
+import './styles/Layout.css';
 
 const App = () => {
     const [isVerified, setIsVerified] = useState(false);

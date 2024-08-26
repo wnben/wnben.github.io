@@ -1,0 +1,5 @@
+.content-container {
+    padding-top: 80px; /* Adjust this value based on your navbar height */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
