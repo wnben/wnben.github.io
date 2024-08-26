@@ -1,6 +1,7 @@
 import React from 'react';
 import RSVPForm from '../components/RSVPForm';
 import './RSVPPage.css';
+import RSVPSection2 from './RSVPSection2';
 
 const RSVPPage = () => {
     return (
@@ -9,7 +10,7 @@ const RSVPPage = () => {
                 <RSVPForm />
             </section>
             <section className="rsvp-section-2">
-                {/* Section2 content will go here */}
+                <RSVPSection2 />
             </section>
         </div>
     );

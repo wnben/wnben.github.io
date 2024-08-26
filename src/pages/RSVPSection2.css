@@ -1,0 +1,18 @@
+.rsvp-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.rsvp-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rsvp-container p {
+    font-size: 18px;
+    margin: 5px 0;
+}

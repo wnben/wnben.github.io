@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import './RSVPForm.css';
 
 const RSVPForm = () => {
@@ -6,33 +7,32 @@ const RSVPForm = () => {
     const [lastName, setLastName] = useState('');
     const [guests, setGuests] = useState('');
     const [comment, setComment] = useState('');
+    const navigate = useNavigate(); // Initialize useNavigate
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        // Submit form data to FormSpark
-        fetch('https://submit-form.com/CiwTpfQw5', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                firstName,
-                lastName,
-                guests,
-                comment,
-            }),
-        }).then((response) => {
+        try {
+            const response = await fetch('https://submit-form.com/CiwTpfQw5', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    firstName,
+                    lastName,
+                    guests,
+                    comment,
+                }),
+            });
             if (response.ok) {
-                alert('RSVP submitted successfully!');
-                // Clear form
-                setFirstName('');
-                setLastName('');
-                setGuests('');
-                setComment('');
+                navigate('/submit-success');
             } else {
-                alert('There was an error submitting your RSVP. Please try again.');
+                throw new Error('Submit failed');
             }
-        });
+        } catch (error) {
+            console.error('Error:', error);
+            alert('There was an error submitting your RSVP. Please try again.');
+        }
     };
 
     return (
