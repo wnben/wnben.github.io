@@ -1,6 +1,6 @@
-import React from 'react';
-import './HomeSection3.css';
-import homeImage from '../assets/Home3.JPG';
+  import React from 'react';
+  import './HomeSection3.css';
+  import homeImage from '../../assets/Home3.JPG';
 
 const HomeSection3 = () => {
   return (

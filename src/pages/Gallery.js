@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { importAll } from '../utils/imageLoader';
 import './Gallery.css';
 
@@ -14,6 +14,16 @@ const albums = {
 };
 
 const Gallery = () => {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
+  };
+
   return (
     <div className="content-container">
       <div className="gallery-container">
@@ -27,12 +37,21 @@ const Gallery = () => {
                   src={image.src}
                   alt={image.alt}
                   className="gallery-image"
+                  onClick={() => openModal(image)}
                 />
               ))}
             </div>
           </div>
         ))}
       </div>
+      {selectedImage && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close" onClick={closeModal}>&times;</span>
+            <img src={selectedImage.src} alt={selectedImage.alt} className="modal-image" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };

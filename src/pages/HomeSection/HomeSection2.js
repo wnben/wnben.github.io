@@ -1,6 +1,6 @@
 import React from 'react';
 import './HomeSection2.css';
-import homeImage from '../assets/Home2.JPG';
+import homeImage from '../../assets/Home2.JPG';
 
 const HomeSection2 = () => {
     return (

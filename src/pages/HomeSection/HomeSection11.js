@@ -1,6 +1,6 @@
 import React from 'react';
-import CalendarIcon from '../assets/calendar-icon.svg';
-import LocationIcon from '../assets/location-icon.svg';
+import CalendarIcon from '../../assets/calendar-icon.svg';
+import LocationIcon from '../../assets/location-icon.svg';
 import './HomeSection11.css';
 
 const HomeSection1 = () => {
