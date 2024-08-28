@@ -1,15 +1,23 @@
+.content-container {
+    padding-top: 60px; /* Adjust based on your Navbar height */
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 .gallery-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-  }
-  
-  .album-selector {
+    gap: 2rem;
+    height: calc(100vh - 60px); /* Adjust based on your Navbar height */
+    overflow-y: auto;
+}
+
+.album-selector {
     display: flex;
     margin-bottom: 20px;
-  }
-  
-  .album-button {
+}
+
+.album-button {
     background: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -17,32 +25,32 @@
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .album-button:hover {
+}
+
+.album-button:hover {
     background-color: #e0e0e0;
-  }
-  
-  .album-button.active {
+}
+
+.album-button.active {
     background-color: #007bff;
     color: #fff;
-  }
-  
-  .carousel {
+}
+
+.carousel {
     position: relative;
     display: inline-block;
     width: 100%;
     max-width: 800px;
-  }
-  
-  .carousel-image {
+}
+
+.carousel-image {
     width: 100%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .nav-button {
+}
+
+.nav-button {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -53,12 +61,46 @@
     cursor: pointer;
     border-radius: 50%;
     font-size: 18px;
-  }
-  
-  .prev {
+}
+
+.prev {
     left: -40px;
-  }
-  
-  .next {
+}
+
+.next {
     right: -40px;
-  }
+}
+
+.album-row {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+}
+
+.album-row h2 {
+    margin-bottom: 0.5rem;
+}
+
+.image-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem 0;
+    height: calc(40vh - 2rem); /* Subtracting space for the title */
+}
+
+.gallery-image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+/* Optional: Hide scrollbar for cleaner look */
+.image-scroll-container {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.image-scroll-container::-webkit-scrollbar {
+    display: none;
+}
