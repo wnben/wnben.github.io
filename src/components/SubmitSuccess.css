@@ -1,0 +1,19 @@
+.submit-success-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.submit-success-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.submit-success-message {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.5;
+}

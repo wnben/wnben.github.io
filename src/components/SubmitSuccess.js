@@ -1,10 +1,11 @@
 import React from 'react';
+import './SubmitSuccess.css';
 
 const SubmitSuccess = () => {
     return (
-        <div>
-            <h1>Thank You!</h1>
-            <p>Your RSVP has been successfully submitted.</p>
+        <div className="submit-success-container">
+            <h1 className="submit-success-title">Thank You!</h1>
+            <p className="submit-success-message">Your RSVP has been successfully submitted.</p>
         </div>
     );
 };
