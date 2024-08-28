@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ffde4ad8.css",
-    "main.js": "/static/js/main.c0fa3906.js",
+    "main.css": "/static/css/main.f6e16b60.css",
+    "main.js": "/static/js/main.1298bb33.js",
     "static/media/Home1.JPG": "/static/media/Home1.f22db803252eabb34bdf.JPG",
     "static/media/Home2.JPG": "/static/media/Home2.3ed29070c1c9cae0a789.JPG",
     "static/media/stairway2.JPG": "/static/media/stairway2.9a989be4991f1bd2b24e.JPG",
@@ -21,11 +21,11 @@
     "static/media/envelope.png": "/static/media/envelope.74c20a5a60947c1314b9.png",
     "static/media/ChesalovaRegular-PV75m.ttf": "/static/media/ChesalovaRegular-PV75m.c7f19c2b17f95be81c33.ttf",
     "index.html": "/index.html",
-    "main.ffde4ad8.css.map": "/static/css/main.ffde4ad8.css.map",
-    "main.c0fa3906.js.map": "/static/js/main.c0fa3906.js.map"
+    "main.f6e16b60.css.map": "/static/css/main.f6e16b60.css.map",
+    "main.1298bb33.js.map": "/static/js/main.1298bb33.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffde4ad8.css",
-    "static/js/main.c0fa3906.js"
+    "static/css/main.f6e16b60.css",
+    "static/js/main.1298bb33.js"
   ]
 }
