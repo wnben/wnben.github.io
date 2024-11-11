@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.93ee0212.css",
-    "main.js": "/static/js/main.1298bb33.js",
+    "main.css": "/static/css/main.221d74e8.css",
+    "main.js": "/static/js/main.8dc921cd.js",
     "static/media/Home1.JPG": "/static/media/Home1.f22db803252eabb34bdf.JPG",
     "static/media/Home2.JPG": "/static/media/Home2.3ed29070c1c9cae0a789.JPG",
     "static/media/stairway2.JPG": "/static/media/stairway2.9a989be4991f1bd2b24e.JPG",
@@ -14,18 +14,37 @@
     "static/media/stairway7.JPG": "/static/media/stairway7.3d7e0b36e31cb5129569.JPG",
     "static/media/stairway8.JPG": "/static/media/stairway8.3d7e0b36e31cb5129569.JPG",
     "static/media/stairway9.JPG": "/static/media/stairway9.3d7e0b36e31cb5129569.JPG",
+    "static/media/2022-03-20 Enjoying classical music in Opéra.jpg": "/static/media/2022-03-20 Enjoying classical music in Opéra.9e1a260962bf70873e6e.jpg",
     "static/media/passage1.JPG": "/static/media/passage1.ddf161025b7b11e78f81.JPG",
+    "static/media/2024-07-29 Cheering for China in Paris Olympics.jpg": "/static/media/2024-07-29 Cheering for China in Paris Olympics.ed4d95b559d244c1d82e.jpg",
+    "static/media/2022-04-16 we got a puppy and her name is ouais ouais.jpg": "/static/media/2022-04-16 we got a puppy and her name is ouais ouais.dc31254b5144a95b231f.jpg",
+    "static/media/2021-10-28 Milano.jpg": "/static/media/2021-10-28 Milano.0fc3db8bd18c7d8fd77b.jpg",
     "static/media/outside2.JPG": "/static/media/outside2.9de9f5e6ef1e01afc0de.JPG",
     "static/media/Home3.JPG": "/static/media/Home3.f7c88237d1db4e1a4a16.JPG",
+    "static/media/2024-02-27 Went through a surgery.jpg": "/static/media/2024-02-27 Went through a surgery.f448d362cf35609eed0a.jpg",
+    "static/media/2022-01-28 Snowboarding in Chamonix.jpg": "/static/media/2022-01-28 Snowboarding in Chamonix.aafb33bce49ce2b44a15.jpg",
+    "static/media/2023-05-15 Vacationing in Malta.jpg": "/static/media/2023-05-15 Vacationing in Malta.9b9e41f0355c652d5218.jpg",
+    "static/media/2023-01-28 Layover in Helsinki.jpg": "/static/media/2023-01-28 Layover in Helsinki.1ad4497865f1a65fb58f.jpg",
+    "static/media/2023-01-16 Back to China together.jpg": "/static/media/2023-01-16 Back to China together.623acf85fd5c4bc5caca.jpg",
+    "static/media/2022-05-15 The most romantic confession balloon under Eiffel Tower.jpg": "/static/media/2022-05-15 The most romantic confession balloon under Eiffel Tower.0e88fd81c21dd627ea63.jpg",
+    "static/media/2023-12-19 Chasing northern lights in Tromoso.jpg": "/static/media/2023-12-19 Chasing northern lights in Tromoso.ae6dfab9508bb8a9e0cb.jpg",
+    "static/media/2022-08-23 Wandering on the Promenade de England in Nice.jpg": "/static/media/2022-08-23 Wandering on the Promenade de England in Nice.d8efeb54d2211fad611b.jpg",
+    "static/media/2021-08-14 Watching Messi's first game in PSG.jpg": "/static/media/2021-08-14 Watching Messi's first game in PSG.7e2e9fd48b4921ca4530.jpg",
+    "static/media/2024-01-04 Got lost again in the red lane.jpg": "/static/media/2024-01-04 Got lost again in the red lane.3e00f46354fa3cd2e34c.jpg",
+    "static/media/2024-11-01 Windmill village in Netherland.jpg": "/static/media/2024-11-01 Windmill village in Netherland.42417f1b843a742316fa.jpg",
+    "static/media/2023-12-07 Concert of Mayday.jpg": "/static/media/2023-12-07 Concert of Mayday.af90016879bb4c58536e.jpg",
+    "static/media/2024-04-23 Vacationing in Sanya.jpg": "/static/media/2024-04-23 Vacationing in Sanya.04bd76885ba566458326.jpg",
+    "static/media/2022-08-26 First flying in Nice.jpg": "/static/media/2022-08-26 First flying in Nice.daed3cc715eb36cf30b1.jpg",
     "static/media/Aller_Std_Rg.ttf": "/static/media/Aller_Std_Rg.009705f132c9defd0e83.ttf",
     "static/media/envelope.png": "/static/media/envelope.74c20a5a60947c1314b9.png",
+    "static/media/2024-12-31 placeholder.jpg": "/static/media/2024-12-31 placeholder.8cc2cd7b977a63800f80.jpg",
     "static/media/ChesalovaRegular-PV75m.ttf": "/static/media/ChesalovaRegular-PV75m.c7f19c2b17f95be81c33.ttf",
     "index.html": "/index.html",
-    "main.93ee0212.css.map": "/static/css/main.93ee0212.css.map",
-    "main.1298bb33.js.map": "/static/js/main.1298bb33.js.map"
+    "main.221d74e8.css.map": "/static/css/main.221d74e8.css.map",
+    "main.8dc921cd.js.map": "/static/js/main.8dc921cd.js.map"
   },
   "entrypoints": [
-    "static/css/main.93ee0212.css",
-    "static/js/main.1298bb33.js"
+    "static/css/main.221d74e8.css",
+    "static/js/main.8dc921cd.js"
   ]
 }
