@@ -1,5 +1,7 @@
 import React from 'react';
 import './HomeSection4.css';
+import RSVPForm from '../../components/RSVPForm'; // Ensure the correct path to RSVPForm.js
+
 
 const eventDetails = [
     {
@@ -56,17 +58,8 @@ const HomeSection4 = () => {
     return (
         <div className="home-section-4">
             <div className="container">
-                <h2 className="section-title">- Event Details -</h2>
-                <div className="events-container">
-                    {eventDetails.map((event, index) => (
-                        <div className="event-card" key={index}>
-                            <h3 className="event-theme">{event.theme}</h3>
-                            <p className="event-time"><strong>Time:</strong> {event.time}</p>
-                            <p className="event-location"><strong>Location:</strong> {event.location}</p>
-                            <p className="event-precautions"><strong>Precautions:</strong> {event.precautions}</p>
-                        </div>
-                    ))}
-                </div>
+                <h2 className="section-title">- RSVP -</h2>
+                    <RSVPForm />  {/* Replacing the event details with the form */}
             </div>
             
         </div>
