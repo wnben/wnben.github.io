@@ -1,9 +1,9 @@
 import React from 'react';
-import './OurStory.css'; // Import the CSS file
+import '../css/OurStory.css'; // Import the CSS file
 
 // Dynamically import all images from the ../assets/Story directory
 const importAll = (requireContext) => requireContext.keys().map(requireContext);
-let images = importAll(require.context('../assets/Story', false, /\.(png|jpe?g|svg)$/));
+let images = importAll(require.context('../../assets/Story', false, /\.(png|jpe?g|svg)$/));
 
 // Sort images by the date in their filenames
 images.sort((a, b) => {

@@ -1,14 +1,17 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../context/LanguageContext';
 import './GuestVerification.css';
 import guestListData from '../data/guestlist.json';
 
 const GuestVerification = ({ onVerified }) => {
+  const { translations, setLanguage, language } = useLanguage();
   const [name, setName] = useState('');
   const [error, setError] = useState('');
   const [guestList, setGuestList] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
-    // Load guest list from the imported JSON data
     setGuestList(guestListData.map(guest => guest.name));
   }, []);
 
@@ -22,33 +25,39 @@ const GuestVerification = ({ onVerified }) => {
     const trimmedName = name.trim();
 
     if (trimmedName === '') {
-      setError('Please enter your name.');
+      setError(translations.error.nameRequired);
       return;
     }
 
     if (!guestList.includes(trimmedName)) {
-      setError('Sorry, your name is not on the guest list.');
+      setError(translations.error.notOnList);
     } else {
       setError('');
-      onVerified(true); // Notify the parent component that verification is successful
+      onVerified();
+      navigate(`/${language}/home`);
     }
   };
 
   return (
-    <div className="verification-background">
+    <div className="verification-wrapper">
+      <div className="verification-envelope-image"></div>
       <div className="verification-container">
-        <h2 className="verification-header">Welcome to Our Wedding</h2>
-        <p className="verification-subtext">Please enter your name to open the invitation:</p>
+        <div className="language-switcher">
+          <button onClick={() => setLanguage('en')}>English</button>
+          <button onClick={() => setLanguage('zh')}>中文</button>
+        </div>
+        <h2 className="verification-header">{translations.welcome}</h2>
+        <p className="verification-subtext">{translations.enterName}</p>
         <form onSubmit={handleSubmit} className="verification-form">
           <input
             type="text"
-            placeholder="Enter your name"
+            placeholder={translations.enterName}
             value={name}
             onChange={handleInputChange}
             className={`verification-input ${error ? 'input-error' : ''}`}
           />
           {error && <p className="error-message">{error}</p>}
-          <button type="submit" className="verification-button">Verify</button>
+          <button type="submit" className="verification-button">{translations.verify}</button>
         </form>
       </div>
     </div>

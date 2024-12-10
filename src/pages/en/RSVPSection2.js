@@ -1,5 +1,5 @@
 import React from 'react';
-import './RSVPSection2.css';
+import '../css/RSVPSection2.css';
 
 const RSVPSection2 = () => {
     return (

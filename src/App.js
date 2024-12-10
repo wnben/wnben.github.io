@@ -1,37 +1,48 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import OurStory from './pages/OurStory';
-import Gallery from './pages/Gallery';
-import WeddingDetails from './pages/WeddingDetails';
-import RSVPPage from './pages/RSVPPage';
-import SubmitSuccess from './components/SubmitSuccess'; // Import the new component
-import GuestVerification from './components/GuestVerification';
 import Footer from './components/Footer';
+import GuestVerification from './components/GuestVerification';
+import HomeEn from './pages/en/Home';
+import OurStoryEn from './pages/en/OurStory';
+import GalleryEn from './pages/en/Gallery';
+import WeddingDetailsEn from './pages/en/WeddingDetails';
+import RSVPPageEn from './pages/en/RSVPPage';
+import HomeZh from './pages/zh/Home';
+import OurStoryZh from './pages/zh/OurStory';
+import GalleryZh from './pages/zh/Gallery';
+import WeddingDetailsZh from './pages/zh/WeddingDetails';
+import RSVPPageZh from './pages/zh/RSVPPage';
 import './styles/Layout.css';
 
 const App = () => {
-    const [isVerified, setIsVerified] = useState(false);
+  const [isVerified, setIsVerified] = useState(false);
 
-    if (!isVerified) {
-        return <GuestVerification onVerified={setIsVerified} />;
-    }
-
-    return (
-        <Router>
-            <Navbar />
-            <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/our-story" element={<OurStory />} />
-                <Route path="/gallery" element={<Gallery />} />
-                <Route path="/wedding-details" element={<WeddingDetails />} />
-                <Route path="/RSVPPage" element={<RSVPPage />} />
-                <Route path="/submit-success" element={<SubmitSuccess />} /> {/* New Route */}
-            </Routes>
-            <Footer />
-        </Router>
-    );
+  return (
+    <LanguageProvider>
+      <Router>
+        {isVerified && <Navbar />} {/* Only show Navbar if verified */}
+        <Routes>
+          <Route path="/" element={<Navigate to="/verification" />} />
+          <Route path="/verification" element={<GuestVerification onVerified={() => setIsVerified(true)} />} />
+          {/* English Routes */}
+          <Route path="/en/home" element={isVerified ? <HomeEn /> : <Navigate to="/verification" />} />
+          <Route path="/en/our-story" element={isVerified ? <OurStoryEn /> : <Navigate to="/verification" />} />
+          <Route path="/en/wedding-details" element={isVerified ? <WeddingDetailsEn /> : <Navigate to="/verification" />} />
+          <Route path="/en/gallery" element={isVerified ? <GalleryEn /> : <Navigate to="/verification" />} />
+          <Route path="/en/RSVPPage" element={isVerified ? <RSVPPageEn /> : <Navigate to="/verification" />} />
+          {/* Chinese Routes */}
+          <Route path="/zh/home" element={isVerified ? <HomeZh /> : <Navigate to="/verification" />} />
+          <Route path="/zh/our-story" element={isVerified ? <OurStoryZh /> : <Navigate to="/verification" />} />
+          <Route path="/zh/wedding-details" element={isVerified ? <WeddingDetailsZh /> : <Navigate to="/verification" />} />
+          <Route path="/zh/gallery" element={isVerified ? <GalleryZh /> : <Navigate to="/verification" />} />
+          <Route path="/zh/RSVPPage" element={isVerified ? <RSVPPageZh /> : <Navigate to="/verification" />} />
+        </Routes>
+        {isVerified && <Footer />} {/* Only show Footer if verified */}
+      </Router>
+    </LanguageProvider>
+  );
 };
 
 export default App;

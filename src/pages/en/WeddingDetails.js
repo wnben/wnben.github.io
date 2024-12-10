@@ -1,5 +1,5 @@
 import React from 'react';
-import './WeddingDetails.css';
+import '../css/WeddingDetails.css';
 
 const eventDetails = [
   {

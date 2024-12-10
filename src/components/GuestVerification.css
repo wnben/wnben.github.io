@@ -1,93 +1,129 @@
-.verification-background {
+.verification-wrapper {
   display: flex;
-  align-items: center; /* Vertically centers the container */
-  justify-content: center; /* Horizontally centers the container */
-  height: 100vh; /* Full viewport height */
-  background-image: url('../assets/envelope.png');
-  background-repeat: no-repeat;
-  background-position: center; /* Center the image within the container */
-  background-size: contain;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+  overflow: visible; /* 确保子元素不被裁剪 */
 }
 
-/* Container for the content */
+.verification-wrapper .verification-envelope-image {
+  width: 400px ;
+  height: 400px ;
+  background-image: url('../assets/envelope.png');
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
 .verification-container {
+  width: 90%;
   max-width: 400px;
   padding: 20px;
-  background-color: transparent; /* Transparent background */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  color: white; /* White text color */
-  position: relative; /* Enables positioning relative to its normal position */
-  top: 100px; /* Offsets the container 100px downward */
+  overflow: visible; /* 确保子元素不被裁剪 */
+   
 }
 
-/* Styling for the header */
 .verification-header {
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* Styling for the subtext */
 .verification-subtext {
   font-size: 16px;
   margin-bottom: 20px;
 }
 
-/* Styling for the form */
 .verification-form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Styling for the input field */
 .verification-input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid white; /* White border for visibility */
+  border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 16px;
-  background-color: transparent; /* Transparent background */
-  color: white; /* White text color */
-  transition: border-color 0.3s ease;
 }
 
-/* Placeholder styling */
 .verification-input::placeholder {
-  color: white; /* White placeholder color */
+  color: #999;
 }
 
-/* Focus state for the input */
-.verification-input:focus {
-  border-color: #007bff;
-}
-
-/* Error state for the input */
 .input-error {
   border-color: #dc3545;
 }
 
-/* Error message styling */
 .error-message {
   color: #dc3545;
   font-size: 14px;
   margin-bottom: 10px;
 }
 
-/* Styling for the verification button */
-.verification-button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.language-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
 }
 
-/* Hover state for the button */
+.language-switcher button,
+.verification-button { /* 统一按钮样式 */
+  width: 100%;
+  background: linear-gradient(135deg, #9b8de5, #6fa3ff); /* 调淡的渐变背景 */
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.language-switcher button:hover,
 .verification-button:hover {
-  background-color: #0056b3;
+  background: linear-gradient(135deg, #6fa3ff, #9b8de5); /* 调淡的反转渐变 */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.language-switcher button:active,
+.verification-button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+  .verification-envelope-image {
+    width: 150px;
+    height: 150px;
+  }
+
+  .verification-header {
+    font-size: 28px;
+  }
+
+  .verification-subtext {
+    font-size: 18px;
+  }
+
+  .verification-input {
+    font-size: 18px;
+  }
+
+  .language-switcher button,
+  .verification-button {
+    font-size: 18px;
+  }
 }

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { importAll } from '../utils/imageLoader';
-import './Gallery.css';
+import { importAll } from '../../utils/imageLoader';
+import '../css/Gallery.css';
 
 // Dynamically import all images from the subfolders
-const outsideImages = importAll(require.context('../assets/gallery/FB_outside', false, /\.(jpg|jpeg|png|JPG)$/));
-const passageImages = importAll(require.context('../assets/gallery/FB_passage', false, /\.(jpg|jpeg|png|JPG)$/));
-const stairwayImages = importAll(require.context('../assets/gallery/FB_stairway', false, /\.(jpg|jpeg|png|JPG)$/));
+const outsideImages = importAll(require.context('../../assets/gallery/FB_outside', false, /\.(jpg|jpeg|png|JPG)$/));
+const passageImages = importAll(require.context('../../assets/gallery/FB_passage', false, /\.(jpg|jpeg|png|JPG)$/));
+const stairwayImages = importAll(require.context('../../assets/gallery/FB_stairway', false, /\.(jpg|jpeg|png|JPG)$/));
 
 const albums = {
   outside: outsideImages.map((src, index) => ({ src, alt: `outside ${index + 1}` })),

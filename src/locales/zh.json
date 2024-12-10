@@ -1,0 +1,16 @@
+{
+    "navbar": {
+      "home": "首页",
+      "ourStory": "我们的故事",
+      "details": "详情",
+      "gallery": "画廊",
+      "rsvp": "回复"
+    },
+    "welcome": "欢迎参加我们的婚礼",
+    "enterName": "请输入您的姓名以打开邀请函：",
+    "verify": "验证",
+    "error": {
+      "nameRequired": "请输入您的姓名。",
+      "notOnList": "抱歉，您的名字不在嘉宾名单上。"
+    }
+  }
