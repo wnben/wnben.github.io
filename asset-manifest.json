@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.221d74e8.css",
-    "main.js": "/static/js/main.8dc921cd.js",
+    "main.css": "/static/css/main.ae773b5d.css",
+    "main.js": "/static/js/main.2ef8ec61.js",
     "static/media/Home1.JPG": "/static/media/Home1.f22db803252eabb34bdf.JPG",
     "static/media/Home2.JPG": "/static/media/Home2.3ed29070c1c9cae0a789.JPG",
     "static/media/stairway2.JPG": "/static/media/stairway2.9a989be4991f1bd2b24e.JPG",
@@ -25,6 +25,7 @@
     "static/media/2022-01-28 Snowboarding in Chamonix.jpg": "/static/media/2022-01-28 Snowboarding in Chamonix.aafb33bce49ce2b44a15.jpg",
     "static/media/2023-05-15 Vacationing in Malta.jpg": "/static/media/2023-05-15 Vacationing in Malta.9b9e41f0355c652d5218.jpg",
     "static/media/2023-01-28 Layover in Helsinki.jpg": "/static/media/2023-01-28 Layover in Helsinki.1ad4497865f1a65fb58f.jpg",
+    "static/media/envelope.png": "/static/media/envelope.7254e31f8fafa5b716b6.png",
     "static/media/2023-01-16 Back to China together.jpg": "/static/media/2023-01-16 Back to China together.623acf85fd5c4bc5caca.jpg",
     "static/media/2022-05-15 The most romantic confession balloon under Eiffel Tower.jpg": "/static/media/2022-05-15 The most romantic confession balloon under Eiffel Tower.0e88fd81c21dd627ea63.jpg",
     "static/media/2023-12-19 Chasing northern lights in Tromoso.jpg": "/static/media/2023-12-19 Chasing northern lights in Tromoso.ae6dfab9508bb8a9e0cb.jpg",
@@ -36,15 +37,14 @@
     "static/media/2024-04-23 Vacationing in Sanya.jpg": "/static/media/2024-04-23 Vacationing in Sanya.04bd76885ba566458326.jpg",
     "static/media/2022-08-26 First flying in Nice.jpg": "/static/media/2022-08-26 First flying in Nice.daed3cc715eb36cf30b1.jpg",
     "static/media/Aller_Std_Rg.ttf": "/static/media/Aller_Std_Rg.009705f132c9defd0e83.ttf",
-    "static/media/envelope.png": "/static/media/envelope.74c20a5a60947c1314b9.png",
     "static/media/2024-12-31 placeholder.jpg": "/static/media/2024-12-31 placeholder.8cc2cd7b977a63800f80.jpg",
     "static/media/ChesalovaRegular-PV75m.ttf": "/static/media/ChesalovaRegular-PV75m.c7f19c2b17f95be81c33.ttf",
     "index.html": "/index.html",
-    "main.221d74e8.css.map": "/static/css/main.221d74e8.css.map",
-    "main.8dc921cd.js.map": "/static/js/main.8dc921cd.js.map"
+    "main.ae773b5d.css.map": "/static/css/main.ae773b5d.css.map",
+    "main.2ef8ec61.js.map": "/static/js/main.2ef8ec61.js.map"
   },
   "entrypoints": [
-    "static/css/main.221d74e8.css",
-    "static/js/main.8dc921cd.js"
+    "static/css/main.ae773b5d.css",
+    "static/js/main.2ef8ec61.js"
   ]
 }
