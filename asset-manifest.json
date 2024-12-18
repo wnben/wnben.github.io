@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.692ab102.css",
-    "main.js": "/static/js/main.f9c8643e.js",
+    "main.css": "/static/css/main.f67e627a.css",
+    "main.js": "/static/js/main.f710d5e7.js",
     "static/media/枫丹白露内4.jpg": "/static/media/枫丹白露内4.8fc31c3d7c57ff777e4a.jpg",
     "static/media/枫丹白露内3.jpg": "/static/media/枫丹白露内3.a6b4a38de38ceb47f2d9.jpg",
     "static/media/枫丹白露内2.jpg": "/static/media/枫丹白露内2.b68f280dfe540b1c571c.jpg",
@@ -30,19 +30,18 @@
     "static/media/鱼尾06.jpg": "/static/media/鱼尾06.74562e7430bc23d89be9.jpg",
     "static/media/卢浮宫3.6.jpg": "/static/media/卢浮宫3.6.b3c8dd7fbe13eac67093.jpg",
     "static/media/鱼尾12.jpg": "/static/media/鱼尾12.c20907eb97d8963beed7.jpg",
+    "static/media/Home1.JPG": "/static/media/Home1.45106fa4ff710bba98de.JPG",
     "static/media/鱼尾08.jpg": "/static/media/鱼尾08.080be24c822e157fbeba.jpg",
     "static/media/鱼尾03.jpg": "/static/media/鱼尾03.e73864e6059dabb9fe68.jpg",
     "static/media/卢浮宫6.JPG": "/static/media/卢浮宫6.e27eca67c9d76fccbbb5.JPG",
     "static/media/鱼尾01.JPG": "/static/media/鱼尾01.86bdf5833f3622e8ec8e.JPG",
     "static/media/鱼尾13.JPG": "/static/media/鱼尾13.c3132ab88e3ce4a6c7b9.JPG",
-    "static/media/Home1.JPG": "/static/media/Home1.f22db803252eabb34bdf.JPG",
-    "static/media/Home2.JPG": "/static/media/Home2.3ed29070c1c9cae0a789.JPG",
     "static/media/卢浮宫3.5.jpg": "/static/media/卢浮宫3.5.fb5e5d10b3cd48f3db0a.jpg",
     "static/media/2022-03-20 Enjoying classical music in Opéra.jpg": "/static/media/2022-03-20 Enjoying classical music in Opéra.9e1a260962bf70873e6e.jpg",
     "static/media/2024-07-29 Cheering for China in Paris Olympics.jpg": "/static/media/2024-07-29 Cheering for China in Paris Olympics.ed4d95b559d244c1d82e.jpg",
     "static/media/2022-04-16 we got a puppy and her name is ouais ouais.jpg": "/static/media/2022-04-16 we got a puppy and her name is ouais ouais.dc31254b5144a95b231f.jpg",
+    "static/media/Home2.JPG": "/static/media/Home2.947a28c783be11674138.JPG",
     "static/media/2021-10-28 Milano.jpg": "/static/media/2021-10-28 Milano.0fc3db8bd18c7d8fd77b.jpg",
-    "static/media/Home3.JPG": "/static/media/Home3.f7c88237d1db4e1a4a16.JPG",
     "static/media/2024-02-27 Went through a surgery.jpg": "/static/media/2024-02-27 Went through a surgery.f448d362cf35609eed0a.jpg",
     "static/media/2022-01-28 Snowboarding in Chamonix.jpg": "/static/media/2022-01-28 Snowboarding in Chamonix.aafb33bce49ce2b44a15.jpg",
     "static/media/2023-05-15 Vacationing in Malta.jpg": "/static/media/2023-05-15 Vacationing in Malta.9b9e41f0355c652d5218.jpg",
@@ -62,11 +61,11 @@
     "static/media/2024-12-31 placeholder.jpg": "/static/media/2024-12-31 placeholder.8cc2cd7b977a63800f80.jpg",
     "static/media/ChesalovaRegular-PV75m.ttf": "/static/media/ChesalovaRegular-PV75m.c7f19c2b17f95be81c33.ttf",
     "index.html": "/index.html",
-    "main.692ab102.css.map": "/static/css/main.692ab102.css.map",
-    "main.f9c8643e.js.map": "/static/js/main.f9c8643e.js.map"
+    "main.f67e627a.css.map": "/static/css/main.f67e627a.css.map",
+    "main.f710d5e7.js.map": "/static/js/main.f710d5e7.js.map"
   },
   "entrypoints": [
-    "static/css/main.692ab102.css",
-    "static/js/main.f9c8643e.js"
+    "static/css/main.f67e627a.css",
+    "static/js/main.f710d5e7.js"
   ]
 }
