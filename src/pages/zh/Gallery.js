@@ -10,11 +10,11 @@ const FranceImages = importAll(require.context('../../assets/gallery/FB_France',
 const LouvreImages = importAll(require.context('../../assets/gallery/FB_Louvre', false, /\.(jpg|jpeg|png|JPG)$/));
 
 const albums = {
-  'Palace of Fontainebleau': FontainebleauImages.map((src, index) => ({ src, alt: `Fontainebleau ${index + 1}` })),
-  'Palace of Fontainebleau ': Fontainebleau2Images.map((src, index) => ({ src, alt: `Fontainebleau2 ${index + 1}` })),
-  'Tour Eiffel': TourEiffelImages.map((src, index) => ({ src, alt: `TourEiffel ${index + 1}` })),
-  'Institute of France': FranceImages.map((src, index) => ({ src, alt: `France ${index + 1}` })),
-  'Louvre Museum': LouvreImages.map((src, index) => ({ src, alt: `Louvre ${index + 1}` }))
+  '枫丹白露宫': FontainebleauImages.map((src, index) => ({ src, alt: `Fontainebleau ${index + 1}` })),
+  '枫丹白露宫 ': Fontainebleau2Images.map((src, index) => ({ src, alt: `Fontainebleau2 ${index + 1}` })),
+  '埃菲尔铁塔': TourEiffelImages.map((src, index) => ({ src, alt: `TourEiffel ${index + 1}` })),
+  '法兰西学院': FranceImages.map((src, index) => ({ src, alt: `France ${index + 1}` })),
+  '卢浮宫': LouvreImages.map((src, index) => ({ src, alt: `Louvre ${index + 1}` }))
 };
 
 const Gallery = () => {

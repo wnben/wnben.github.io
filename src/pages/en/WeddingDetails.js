@@ -6,7 +6,7 @@ const eventDetails = [
       theme: 'Check-in',
       time: 'Saturday, March 8, 2025, starting from 14:00 ',
       location: 'Reception Desk, The Westin Sanya Haitang Bay Resort',
-      precautions: 'Please let us know in advance if you need an early check-in or if you need to take the shuttle bus from the airport. Besides, we book the twins room by default, so please let us know if you need a king room. '
+      precautions: 'Please let us know in advance if you need an early check-in or if you need to take the shuttle bus from the airport. Besides, we book the sea-view twins room by default for you, so please let us know if you need a sea-view king room. '
   },  
   {
       theme: 'Come to say Hi',

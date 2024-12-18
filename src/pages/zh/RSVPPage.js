@@ -1,5 +1,5 @@
 import React from 'react';
-import RSVPForm from '../../components/RSVPForm';
+import RSVPForm from '../en/RSVPForm';
 import '../css/RSVPPage.css';
 import RSVPSection2 from './RSVPSection2';
 

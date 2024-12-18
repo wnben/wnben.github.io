@@ -46,7 +46,6 @@ const OurStory = () => {
   return (
     <div className='content-container'>
       <div className='ourstory-page'>
-        <h1>Our Story</h1>
         <div className='story-grid'>
           {storyData.map((item, index) => (
             <div key={index} className='story-item'>
