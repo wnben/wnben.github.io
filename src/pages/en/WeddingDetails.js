@@ -3,52 +3,46 @@ import '../css/WeddingDetails.css';
 
 const eventDetails = [
   {
-      theme: 'Welcome Dinner',
-      time: 'Friday, June 25, 2023, 6:00 PM',
-      location: 'Rooftop Terrace, Hotel XYZ',
-      precautions: 'Casual dress code, bring a light jacket.'
+      theme: 'Check-in',
+      time: 'Saturday, March 8, 2025, starting from 14:00 ',
+      location: 'Reception Desk, The Westin Sanya Haitang Bay Resort',
+      precautions: 'Please let us know in advance if you need an early check-in or if you need to take the shuttle bus from the airport. Besides, we book the twins room by default, so please let us know if you need a king room. '
+  },  
+  {
+      theme: 'Come to say Hi',
+      time: 'Saturday, March 8, 2025, 16:00 - 22:00',
+      location: 'Exotic Villas, The Westin Sanya Haitang Bay Resort (The exact villa number will be provided later)',
+      precautions: 'We are looking forward to seeing you and chatting with you before the wedding, so please come by and say hi if you don\'t have any other plans on Saturday.'
   },
   {
-      theme: 'Bridal Shower',
-      time: 'Saturday, June 26, 2023, 10:00 AM',
-      location: 'Main Hall, Hotel XYZ',
-      precautions: 'Formal attire, gifts optional.'
+    theme: 'Buffet Breakfast',
+    time: 'Sunday, March 9/10, 2025, 07:00 - 11:00',
+    location: 'Seasonal Tastes Restaurant, The Westin Sanya Haitang Bay Resort (A map of the hotel will be provided)',
+    precautions: 'We book the buffet breakfast for both 9th and 10th March for you. If you wake up on time, don\'t miss it :) there are plenty of choices delicious food. BTW, the beverage in the mini bar in your room is also for free, so enjoy it!'
   },
   {
       theme: 'Wedding Ceremony',
-      time: 'Saturday, June 26, 2023, 4:00 PM',
-      location: 'Central Park, New York, NY',
-      precautions: 'Formal attire, arrive 30 minutes early.'
+      time: 'Sunday, March 9, 2025, 16:00 - 18:00',
+      location: 'WeiFeng Garden, The Westin Sanya Haitang Bay Resort (A map of the hotel will be provided)',
+      precautions: 'Formal attire, LIGHT COLORED CLOTHING please!'
   },
   {
-      theme: 'Reception',
-      time: 'Saturday, June 26, 2023, 6:00 PM',
-      location: 'Grand Ballroom, Hotel XYZ',
-      precautions: 'Dinner and dancing, formal attire.'
+      theme: 'Dinner',
+      time: 'Sunday, March 9, 2025, 19:00 - 22:00',
+      location: 'TianMeng Garden, Westin Hotel (A map of the hotel will be provided)',
+      precautions: 'Dinner and dancing, formal attire if you have one, any color is fine.'
   },
   {
       theme: 'After Party',
-      time: 'Saturday, June 26, 2023, 9:00 PM',
-      location: 'Club Lounge, Hotel XYZ',
-      precautions: 'Casual attire, open bar.'
+      time: 'Sunday, March 9, 2025, 22:00 - 02:00',
+      location: 'Exotic Villas, The Westin Sanya Haitang Bay Resort (The exact villa number will be provided later)',
+      precautions: 'We will continue to celebrate after dinner in the villas, so join us if you are not yet tired!'
   },
   {
-      theme: 'Morning Yoga',
-      time: 'Sunday, June 27, 2023, 8:00 AM',
-      location: 'Hotel XYZ Lawn',
-      precautions: 'Wear comfortable attire, yoga mats provided.'
-  },
-  {
-      theme: 'Farewell Brunch',
-      time: 'Sunday, June 27, 2023, 10:00 AM',
-      location: 'Main Dining Room, Hotel XYZ',
-      precautions: 'Casual attire, relaxed atmosphere.'
-  },
-  {
-      theme: 'Departure',
-      time: 'Sunday, June 27, 2023, 12:00 PM',
-      location: 'Hotel Lobby',
-      precautions: 'Check out by 11:00 AM.'
+      theme: 'Check-out',
+      time: 'Monday, March 10, 2025, 12:00',
+      location: 'Reception Desk, The Westin Sanya Haitang Bay Resort',
+      precautions: 'Please let us know in advance if you need a late check-out or if you need to take the shuttle bus to the airport. '
   }
 ];
 

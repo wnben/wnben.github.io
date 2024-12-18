@@ -2,15 +2,15 @@
     "navbar": {
       "home": "首页",
       "ourStory": "我们的故事",
-      "details": "详情",
+      "details": "婚礼细节",
       "gallery": "画廊",
-      "rsvp": "回复"
+      "rsvp": "预约"
     },
     "welcome": "欢迎参加我们的婚礼",
     "enterName": "请输入您的姓名以打开邀请函：",
     "verify": "验证",
     "error": {
       "nameRequired": "请输入您的姓名。",
-      "notOnList": "抱歉，您的名字不在嘉宾名单上。"
+      "notOnList": "你自己的名字都不知道吗！快去问问yuting或者benben吧！"
     }
   }

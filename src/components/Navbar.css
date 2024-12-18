@@ -38,6 +38,7 @@
 .navbar-item a {
   color: #b01e1f;
   text-decoration: none;
+  font-weight: bold;
   white-space: nowrap; /* Prevent text from breaking into multiple lines */
 }
 

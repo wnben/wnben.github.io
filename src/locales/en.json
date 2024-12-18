@@ -11,6 +11,6 @@
   "verify": "Verify",
   "error": {
     "nameRequired": "Please enter your name.",
-    "notOnList": "Sorry, your name is not on the guest list."
+    "notOnList": "You don't know your own name?? Check with Yuting or Weining!"
   }
 }

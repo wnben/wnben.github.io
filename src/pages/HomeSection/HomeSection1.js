@@ -14,6 +14,7 @@ const HomeSection1 = () => {
                 />
             </div>
             <p>- Save the date, we're gettin' hitched -</p>
+            <p>We are looking forward to celebrating with you!</p>
         </div>
     );
 }
