@@ -32,7 +32,8 @@ const customTexts = [
   '2024-04-23 Vacationing in Sanya',
   '2024-07-29 Cheering for China in Paris Olympics',
   '2024-11-01 Windmill village in Netherland',
-  'placeholder',
+  '2024-12-24 Our 4th christmas in Roma',
+  '2025-03-09 We are getting married'
   // Add more custom text for each image
 ];
 

@@ -40,7 +40,7 @@ const RSVPForm = () => {
 
     return (
         <form className="rsvp-form" onSubmit={handleSubmit}>
-            <h2>Yes，我会参加！</h2>
+            <h2>Yes. I'll Be There</h2>
             <div className="form-group">
                 <label>
                     First Name<span className="required">*</span>

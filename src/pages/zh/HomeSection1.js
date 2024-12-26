@@ -5,7 +5,7 @@ import homeImage from '../../assets/Home1.JPG';
 const HomeSection1 = () => {
     return (
         <div className="home-section1">
-            <h1>Weining ♥ Yuting</h1>
+            <h1>贲威宁 ♥ 黄语亭</h1>
             <div className="image-container">
                 <img 
                     src={homeImage} 
@@ -13,8 +13,8 @@ const HomeSection1 = () => {
                     className="couple-image"
                 />
             </div>
-            <p>- Save the date, we're gettin' hitched -</p>
-            <p>We are looking forward to celebrating with you!</p>
+            <p>- 记下这个日期吧 我们要结婚啦 -</p>
+            <p>非常期待与大家一起庆祝！</p>
         </div>
     );
 }

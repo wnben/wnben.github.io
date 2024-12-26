@@ -36,7 +36,7 @@ import homeImage from '../../assets/Home2.JPG';
 const HomeSection2 = () => {
     return (
         <div className="home-section2">
-            <h1>2025年三月九日 ♡</h1>
+            <h1>二〇二五年三月九日 ♡</h1>
             <div className="image-container2">
                 <img 
                     src={homeImage} 
@@ -44,7 +44,7 @@ const HomeSection2 = () => {
                     className="couple-image2"
                 />
             </div>
-            <p>三亚海棠湾民生威斯汀度假酒店</p>
+            <p>三亚·海棠湾 民生威斯汀度假酒店</p>
             <p>三亚 海棠区 海棠北路116号</p>
         </div>
     );
