@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.0bb2e8c1.css",
-    "main.js": "/static/js/main.ed2afdb1.js",
+    "main.js": "/static/js/main.74249c41.js",
     "static/media/枫丹白露内6.jpg": "/static/media/枫丹白露内6.0d5cf4e715f295d862c1.jpg",
     "static/media/枫丹白露内4.jpg": "/static/media/枫丹白露内4.8fc31c3d7c57ff777e4a.jpg",
     "static/media/枫丹白露内3.jpg": "/static/media/枫丹白露内3.83a28ee770415974dfc7.jpg",
@@ -111,10 +111,10 @@
     "static/media/ChesalovaRegular-PV75m.ttf": "/static/media/ChesalovaRegular-PV75m.c7f19c2b17f95be81c33.ttf",
     "index.html": "/index.html",
     "main.0bb2e8c1.css.map": "/static/css/main.0bb2e8c1.css.map",
-    "main.ed2afdb1.js.map": "/static/js/main.ed2afdb1.js.map"
+    "main.74249c41.js.map": "/static/js/main.74249c41.js.map"
   },
   "entrypoints": [
     "static/css/main.0bb2e8c1.css",
-    "static/js/main.ed2afdb1.js"
+    "static/js/main.74249c41.js"
   ]
 }
