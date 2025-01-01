@@ -46,15 +46,16 @@ const eventDetails = [
     )
   },
   {
-      theme: 'Wedding Ceremony - the most imporatant part is coming!',
+      theme: 'Wedding Ceremony -- The Most Important Part!!!',
       time: 'Sunday, March 9, 2025, 16:00 - 18:00',
-      location: 'WeiFeng Garden (#23 on the map), The Westin Sanya Haitang Bay Resort',
+      location: 'Breeze Lawn (Map #23), Sanya Haitang Bay Minsheng Westin Resort',
       precautions: (
         <>
-          <p><strong></strong><strong><span style={{ color: '#b01e1f' }}>Formal attire. For the overall atmosphere of the ceremony, LIGHT COLORED CLOTHING please please please!</span></strong></p>
+          <p><strong>Dress Code:</strong> Formal. For the overall effect of the ceremony, <strong><span style={{ color: '#b01e1f' }}>please make sure to wear light-colored clothes!</span></strong></p>
           <ul>
-            <li>Please compare the color cards we provide to choose the color of your clothing. Thank you in advance for your cooperation!</li>
+            <li>If not sure, please compare the below color card to choose. This is super important for our photoshoot 🥺. Thanksssssss</li>
           </ul>
+          <img src={require('../../assets/dresscode.jpg')} alt="Dress Code" className="dresscode-image" />
         </>
       )
   },

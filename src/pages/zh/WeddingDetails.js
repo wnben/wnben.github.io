@@ -53,8 +53,9 @@ const eventDetails = [
       <>
         <p><strong>着装要求：</strong>正装。为了仪式整体效果，<strong><span style={{ color: '#b01e1f' }}>请一定一定一定要穿浅色的衣服哦!</span></strong></p>
         <ul>
-          <li>请大家对比我们提供的色卡进行服装颜色选择，提前感谢您的配合！</li>
+          <li>如果不确定，可以对比以下色卡进行选择，这对我们的出片真的肥肠重要🥺</li>
         </ul>
+        <img src={require('../../assets/dresscode.jpg')} alt="Dress Code" className="dresscode-image" />
       </>
     )
   },

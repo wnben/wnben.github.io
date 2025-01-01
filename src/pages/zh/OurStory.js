@@ -15,7 +15,7 @@ images.sort((a, b) => {
 // Custom text for each image
 const customTexts = [
   '2021-08-14 Watching Messi\'s first game in PSG',
-  '2021-08-14 Milano',
+  '2021-10-28 Milano',
   '2022-01-28 Snowboarding in Chamonix',
   '2022-03-20 Enjoying classical music in Opéra',
   '2022-04-16 we got a puppy and her name is ouais ouais!',
