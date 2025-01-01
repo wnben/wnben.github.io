@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1d48f5fe.css",
-    "main.js": "/static/js/main.c123749a.js",
+    "main.css": "/static/css/main.0bb2e8c1.css",
+    "main.js": "/static/js/main.ed2afdb1.js",
     "static/media/枫丹白露内6.jpg": "/static/media/枫丹白露内6.0d5cf4e715f295d862c1.jpg",
     "static/media/枫丹白露内4.jpg": "/static/media/枫丹白露内4.8fc31c3d7c57ff777e4a.jpg",
     "static/media/枫丹白露内3.jpg": "/static/media/枫丹白露内3.83a28ee770415974dfc7.jpg",
@@ -110,11 +110,11 @@
     "static/media/2025-03-09 We are getting married.jpg": "/static/media/2025-03-09 We are getting married.8cc2cd7b977a63800f80.jpg",
     "static/media/ChesalovaRegular-PV75m.ttf": "/static/media/ChesalovaRegular-PV75m.c7f19c2b17f95be81c33.ttf",
     "index.html": "/index.html",
-    "main.1d48f5fe.css.map": "/static/css/main.1d48f5fe.css.map",
-    "main.c123749a.js.map": "/static/js/main.c123749a.js.map"
+    "main.0bb2e8c1.css.map": "/static/css/main.0bb2e8c1.css.map",
+    "main.ed2afdb1.js.map": "/static/js/main.ed2afdb1.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d48f5fe.css",
-    "static/js/main.c123749a.js"
+    "static/css/main.0bb2e8c1.css",
+    "static/js/main.ed2afdb1.js"
   ]
 }
