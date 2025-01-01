@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
 import '../css/RSVPForm.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const RSVPForm = () => {
     const [firstName, setFirstName] = useState('');
@@ -27,7 +29,18 @@ const RSVPForm = () => {
             });
             
             if (response.ok) {
-                navigate('/submit-success');
+                toast.success('提交中...', {
+                    position: "top-center",
+                    autoClose: 2000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+                setTimeout(() => {
+                    navigate('/submit-success');
+                }, 3000); // Delay navigation by 3 seconds
             } else {
                 const errorData = await response.json();
                 throw new Error(errorData.message || '提交失败');
@@ -88,6 +101,7 @@ const RSVPForm = () => {
                 />
             </div>
             <button type="submit">提交</button>
+            <ToastContainer style={{ zIndex: 9999 }} />
         </form>
     );
 };

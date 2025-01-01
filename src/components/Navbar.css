@@ -45,3 +45,11 @@
 .navbar-item a:hover {
   text-decoration: underline;
 }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Lower than the ToastContainer's z-index */
+    /* Other styles */
+}

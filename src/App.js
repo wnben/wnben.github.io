@@ -14,6 +14,8 @@ import OurStoryZh from './pages/zh/OurStory';
 import GalleryZh from './pages/zh/Gallery';
 import WeddingDetailsZh from './pages/zh/WeddingDetails';
 import RSVPPageZh from './pages/zh/RSVPPage';
+import RSVPForm from './pages/zh/RSVPForm';
+import SubmitSuccess from './pages/zh/SubmitSuccess';
 import './styles/Layout.css';
 
 const App = () => {
@@ -38,6 +40,8 @@ const App = () => {
           <Route path="/zh/wedding-details" element={isVerified ? <WeddingDetailsZh /> : <Navigate to="/verification" />} />
           <Route path="/zh/gallery" element={isVerified ? <GalleryZh /> : <Navigate to="/verification" />} />
           <Route path="/zh/RSVPPage" element={isVerified ? <RSVPPageZh /> : <Navigate to="/verification" />} />
+          <Route path="/rsvp" element={<RSVPForm />} />
+          <Route path="/submit-success" element={<SubmitSuccess />} />
         </Routes>
         {isVerified && <Footer />} {/* Only show Footer if verified */}
       </Router>
