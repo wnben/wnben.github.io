@@ -9,13 +9,13 @@ import OurStoryEn from './pages/en/OurStory';
 import GalleryEn from './pages/en/Gallery';
 import WeddingDetailsEn from './pages/en/WeddingDetails';
 import RSVPPageEn from './pages/en/RSVPPage';
+import SubmitSuccessEn from './pages/en/SubmitSuccess';
 import HomeZh from './pages/zh/Home';
 import OurStoryZh from './pages/zh/OurStory';
 import GalleryZh from './pages/zh/Gallery';
 import WeddingDetailsZh from './pages/zh/WeddingDetails';
 import RSVPPageZh from './pages/zh/RSVPPage';
-import RSVPForm from './pages/zh/RSVPForm';
-import SubmitSuccess from './pages/zh/SubmitSuccess';
+import SubmitSuccessZh from './pages/zh/SubmitSuccess';
 import './styles/Layout.css';
 
 const App = () => {
@@ -34,14 +34,14 @@ const App = () => {
           <Route path="/en/wedding-details" element={isVerified ? <WeddingDetailsEn /> : <Navigate to="/verification" />} />
           <Route path="/en/gallery" element={isVerified ? <GalleryEn /> : <Navigate to="/verification" />} />
           <Route path="/en/RSVPPage" element={isVerified ? <RSVPPageEn /> : <Navigate to="/verification" />} />
+          <Route path="/en/submit-success" element={<SubmitSuccessEn />} />
           {/* Chinese Routes */}
           <Route path="/zh/home" element={isVerified ? <HomeZh /> : <Navigate to="/verification" />} />
           <Route path="/zh/our-story" element={isVerified ? <OurStoryZh /> : <Navigate to="/verification" />} />
           <Route path="/zh/wedding-details" element={isVerified ? <WeddingDetailsZh /> : <Navigate to="/verification" />} />
           <Route path="/zh/gallery" element={isVerified ? <GalleryZh /> : <Navigate to="/verification" />} />
           <Route path="/zh/RSVPPage" element={isVerified ? <RSVPPageZh /> : <Navigate to="/verification" />} />
-          <Route path="/rsvp" element={<RSVPForm />} />
-          <Route path="/submit-success" element={<SubmitSuccess />} />
+          <Route path="/zh/submit-success" element={<SubmitSuccessZh />} />
         </Routes>
         {isVerified && <Footer />} {/* Only show Footer if verified */}
       </Router>

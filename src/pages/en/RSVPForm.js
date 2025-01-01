@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../css/RSVPForm.css';
 
 const RSVPForm = () => {
@@ -27,7 +29,18 @@ const RSVPForm = () => {
             });
             
             if (response.ok) {
-                navigate('/submit-success');
+                toast.success('Submitting...', {
+                    position: "top-center",
+                    autoClose: 1500,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                });
+                setTimeout(() => {
+                    navigate('/zh/submit-success');
+                }, 1500);
             } else {
                 const errorData = await response.json();
                 throw new Error(errorData.message || 'Submission failed');

@@ -31,7 +31,7 @@ const RSVPForm = () => {
             if (response.ok) {
                 toast.success('提交中...', {
                     position: "top-center",
-                    autoClose: 2000,
+                    autoClose: 1500,
                     hideProgressBar: false,
                     closeOnClick: true,
                     pauseOnHover: true,
@@ -39,8 +39,8 @@ const RSVPForm = () => {
                     progress: undefined,
                 });
                 setTimeout(() => {
-                    navigate('/submit-success');
-                }, 3000); // Delay navigation by 3 seconds
+                    navigate('/zh/submit-success');
+                }, 1500); // Delay navigation by 1.5 seconds
             } else {
                 const errorData = await response.json();
                 throw new Error(errorData.message || '提交失败');
